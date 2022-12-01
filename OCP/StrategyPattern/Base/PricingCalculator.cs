@@ -1,6 +1,6 @@
-﻿using OCP.Models.Rules;
+﻿using OCP.StrategyPattern.Rules;
 
-namespace OCP.Models.Base;
+namespace OCP.StrategyPattern.Base;
 
 public class PricingCalculator : IPricingCalculator
 {

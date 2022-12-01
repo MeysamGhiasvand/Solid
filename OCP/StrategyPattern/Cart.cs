@@ -1,4 +1,4 @@
-﻿using OCP.Models.Base;
+﻿using OCP.StrategyPattern.Base;
 
 namespace OCP.StrategyPattern;
 

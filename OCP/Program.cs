@@ -1,7 +1,7 @@
-﻿using OCP.Models;
-using OCP.Models.Base;
-using OCP.StrategyPattern;
+﻿using OCP.StrategyPattern;
+using OCP.StrategyPattern.Base;
 
+Console.WriteLine("ocp with strategy pattern");
 var cart = new Cart();
 cart.Add(new OrderItem { Name = "Abb1", Quantity = 3 });
 cart.Add(new OrderItem { Name = "Bbb1", Quantity = 6 });

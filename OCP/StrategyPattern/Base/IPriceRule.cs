@@ -1,4 +1,4 @@
-﻿namespace OCP.Models.Base;
+﻿namespace OCP.StrategyPattern.Base;
 
 public interface IPriceRule
 {

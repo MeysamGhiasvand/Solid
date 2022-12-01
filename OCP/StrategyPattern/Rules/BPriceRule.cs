@@ -1,6 +1,6 @@
-﻿using OCP.Models.Base;
+﻿using OCP.StrategyPattern.Base;
 
-namespace OCP.Models.Rules;
+namespace OCP.StrategyPattern.Rules;
 
 public class BPriceRule : IPriceRule
 {
