@@ -1,6 +1,6 @@
 ﻿using OCP.Models.Base;
 
-namespace OCP.Models;
+namespace OCP.StrategyPattern;
 
 public class Cart
 {
@@ -29,12 +29,6 @@ public class Cart
 
     public decimal TotalAmount()
     {
-        decimal totalAmount = 0;
-        foreach (OrderItem orderItem in Items)
-        {
-            totalAmount += _pricingCalculator.CalculatePrice(orderItem);
-        }
-
-        return totalAmount;
+        return Items.Sum(orderItem => _pricingCalculator.CalculatePrice(orderItem));
     }
 }
