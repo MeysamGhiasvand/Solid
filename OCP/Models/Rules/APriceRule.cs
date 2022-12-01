@@ -1,17 +1,16 @@
 ﻿using OCP.Models.Base;
 
-namespace OCP.Models.Rules
-{
-    public class APriceRule : IPriceRule
-    {
-        public decimal CalculatePrice(OrderItem item)
-        {
-            return item.Quantity * 2;
-        }
+namespace OCP.Models.Rules;
 
-        public bool IsMatch(OrderItem item)
-        {
-            return item.Name.StartsWith("A");
-        }
+public class APriceRule : IPriceRule
+{
+    public decimal CalculatePrice(OrderItem item)
+    {
+        return item.Quantity * 2;
+    }
+
+    public bool IsMatch(OrderItem item)
+    {
+        return item.Name.StartsWith("A");
     }
 }
